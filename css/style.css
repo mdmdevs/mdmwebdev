@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-hero {
+    position: relative;
+}
+.main-hero::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+.main-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.main-msg {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    max-width: 50%;
+    color: white;
+}
+.main-msg h3,
+.main-msg p,
+.main-msg button {
+    margin-bottom: 20px;
+}
+.main-msg p {
+    line-height: 1.5;
+}
+.main-msg button {
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 7px 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.main-msg button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+/*  whatsapp and top*/
+.wp,
+.up {
+    width: 100px;
+    position: fixed;
+    right: 2px;
+    bottom: 5px;
+    cursor: pointer;
+}
+.up {
+    left: 20px;
+    bottom: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: rgb(9, 119, 210);
+    
+
+}
+
+footer li a {
+    color: white;
+    text-decoration: none
+}
+
+footer li {
+    list-style: none;
+    font-size: 1.3rem;
+}
